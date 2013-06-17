@@ -36,7 +36,7 @@ public class AppTest extends TestCase
 		assertTrue(true);
 	}
 
-	public void badTest()
+	public void testBad()
 	{
 		assertFalse(true);
 	}
