@@ -13,6 +13,7 @@ public class Show<Viewer> {
 		return list;
 	}
 	
+	
 	public Viewer getViewer() {
 		
 		return Viewer;
