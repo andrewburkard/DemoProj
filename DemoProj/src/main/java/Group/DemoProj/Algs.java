@@ -11,7 +11,6 @@ public class Algs
 	public static int maxViewers(Show show)
 	{
 		int maxViewers = 0;
-
 		Set<Set<String>> allPossibleEliminations = generateAllPossibleEliminations(show);
 		for (Set<String> eliminated : allPossibleEliminations)
 		{
