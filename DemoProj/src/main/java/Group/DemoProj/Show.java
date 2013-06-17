@@ -12,6 +12,10 @@ public class Show
 	private int nDogs;
 	private int nViewers;
 
+	public Show()
+	{
+		viewers = new ArrayList<Viewer>(nViewers);
+	}
 	public Show(int nCats, int nDogs, int nViewers)
 	{
 		this.nCats = nCats;
@@ -31,6 +35,11 @@ public class Show
 		
 		return pets;
 
+	}
+	
+	public void addViewer(Viewer viewer)
+	{
+		viewers.add(viewer);
 	}
 
 	public List<Viewer> getViewers()
