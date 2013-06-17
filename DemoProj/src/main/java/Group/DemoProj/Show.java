@@ -1,25 +1,63 @@
 package Group.DemoProj;
 
-public class Show<Viewer> {
-	private Viewer Viewer;
-	private String list;
+import java.util.ArrayList;
+import java.util.List;
 
-	public String getViewerList(String newTest, String newShow, String newVotes, int viewerCount){
-		list = list+newTest+"/n";
-		list = list+newShow+"/n";
-		for(int i = 1; i <= viewerCount; i++){
-			list = list+newVotes+"/n";
-		}
-		return list;
-	}
-	
-	
-	public Viewer getViewer() {
+public class Show
+{
+	private List<Viewer> viewers;
+	private int nCats;
+	private int nDogs;
+	private int nViewers;
+
+	public Show(int nCats, int nDogs, int nViewers)
+	{
+		this.nCats = nCats;
+		this.nDogs = nDogs;
+		this.nViewers = nViewers;
 		
-		return Viewer;
+		viewers = new ArrayList<Viewer>(nViewers);
 	}
 
-	public void setViewer(Viewer viewer) {
-		Viewer = viewer;
+	public List<Viewer> getViewers()
+	{
+		return viewers;
 	}
+
+	public void setViewers(List<Viewer> viewers)
+	{
+		this.viewers = viewers;
+	}
+
+	public int getnCats()
+	{
+		return nCats;
+	}
+
+	public void setnCats(int nCats)
+	{
+		this.nCats = nCats;
+	}
+
+	public int getnDogs()
+	{
+		return nDogs;
+	}
+
+	public void setnDogs(int nDogs)
+	{
+		this.nDogs = nDogs;
+	}
+
+	public int getnViewers()
+	{
+		return nViewers;
+	}
+
+	public void setnViewers(int nViewers)
+	{
+		this.nViewers = nViewers;
+	}
+	
+	
 }

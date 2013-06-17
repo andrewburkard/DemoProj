@@ -7,7 +7,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest extends TestCase
+public class DriverTest extends TestCase
 {
 	/**
 	 * Create the test case
@@ -15,7 +15,7 @@ public class AppTest extends TestCase
 	 * @param testName
 	 *            name of the test case
 	 */
-	public AppTest(String testName)
+	public DriverTest(String testName)
 	{
 		super(testName);
 	}
@@ -25,7 +25,7 @@ public class AppTest extends TestCase
 	 */
 	public static Test suite()
 	{
-		return new TestSuite(AppTest.class);
+		return new TestSuite(DriverTest.class);
 	}
 
 	/**
@@ -36,8 +36,4 @@ public class AppTest extends TestCase
 		assertTrue(true);
 	}
 
-	public void testBad()
-	{
-		assertFalse(true);
-	}
 }

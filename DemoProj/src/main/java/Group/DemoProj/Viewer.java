@@ -1,5 +1,8 @@
 package Group.DemoProj;
 
+import java.util.List;
+import java.util.Set;
+
 public class Viewer
 {
 
@@ -16,6 +19,18 @@ public class Viewer
 		this.favorite = favorite;
 		this.throwOut = throwOut;
 
+	}
+
+	/**
+	 * @param eliminatedPets
+	 *            A list of pets to be eliminated
+	 * @return true if the eliminated pets contains throwOut but does not
+	 *         contain favorite.
+	 */
+	public boolean isSatisfiedByEliminating(Set<String> eliminatedPets)
+	{
+		return eliminatedPets.contains(throwOut)
+				&& !eliminatedPets.contains(favorite);
 	}
 
 	public String getFavorite()
