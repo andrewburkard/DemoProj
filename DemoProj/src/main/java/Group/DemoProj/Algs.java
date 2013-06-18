@@ -36,7 +36,7 @@ public class Algs
 		return powerSet(allPets);
 	}
 
-	private static <T> Set<Set<T>> powerSet(Set<T> originalSet)
+	public static <T> Set<Set<T>> powerSet(Set<T> originalSet)
 	{
 		Set<Set<T>> sets = new HashSet<Set<T>>();
 		if (originalSet.isEmpty())
