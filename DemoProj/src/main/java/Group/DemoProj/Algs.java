@@ -29,7 +29,7 @@ public class Algs
 	 * @return A list containing each posisble elimination, each of which is a
 	 *         set.
 	 */
-	private static Set<Set<String>> generateAllPossibleEliminations(Show show)
+	public static Set<Set<String>> generateAllPossibleEliminations(Show show)
 	{
 		Set<String> allPets = show.allPets();
 
