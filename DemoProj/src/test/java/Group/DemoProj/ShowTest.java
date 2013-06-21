@@ -14,7 +14,7 @@ public class ShowTest extends TestCase
      * (Called before every test case method.)
      */
     public void setUp() {
-        show = new Show(5,4,20);
+        show = new Show();
     }
 
     /**

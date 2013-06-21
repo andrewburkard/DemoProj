@@ -16,7 +16,7 @@ public class InputParser
 		Scanner in = new Scanner(inputStream);
 
 		int numShows = Integer.parseInt(in.nextLine());
-		
+
 		List<Show> shows = new ArrayList<Show>(numShows);
 
 		for (int i = 0; i < numShows; i++)
@@ -29,14 +29,14 @@ public class InputParser
 	{
 		Show show = new Show();
 		String str = in.nextLine();
-		show = setAttributes(show, str);
+		show = setShowAttributes(show, str);
 
 		String s = "";
 		for (int i = 0; i < show.getnViewers(); i++)
 		{
 			s = in.nextLine();
 			Viewer viewer = new Viewer();
-			viewer = setAttributes(viewer, s);
+			viewer = setViewerAttributes(viewer, s);
 
 			show.addViewer(viewer);
 		}
@@ -44,7 +44,7 @@ public class InputParser
 		return show;
 	}
 
-	public static Show setAttributes(Show show, String attributes)
+	public static Show setShowAttributes(Show show, String attributes)
 	{
 		StringTokenizer tokenizer = new StringTokenizer(attributes);
 		show.setnCats(Integer.parseInt(tokenizer.nextToken()));
@@ -54,7 +54,7 @@ public class InputParser
 		return show;
 	}
 
-	public static Viewer setAttributes(Viewer viewer, String attributes)
+	public static Viewer setViewerAttributes(Viewer viewer, String attributes)
 	{
 		StringTokenizer tokenizer = new StringTokenizer(attributes);
 		viewer.setFavorite(tokenizer.nextToken());
