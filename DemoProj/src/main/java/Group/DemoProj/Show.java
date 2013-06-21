@@ -14,7 +14,7 @@ public class Show
 
 	public Show()
 	{
-		viewers = new ArrayList<Viewer>(nViewers);
+		this(0,0,0);
 	}
 	public Show(int nCats, int nDogs, int nViewers)
 	{
@@ -32,11 +32,11 @@ public class Show
 			pets.add("C" + Integer.toString(i));
 		for (int i = 1; i <= nDogs; i++)
 			pets.add("D" + Integer.toString(i));
-		
+
 		return pets;
 
 	}
-	
+
 	public void addViewer(Viewer viewer)
 	{
 		viewers.add(viewer);
