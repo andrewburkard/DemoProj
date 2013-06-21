@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 import junit.framework.TestCase;
-import org.junit.After;
-import org.junit.Before;
 
 public class ShowTest extends TestCase
 {
@@ -15,7 +13,6 @@ public class ShowTest extends TestCase
      * Sets up the test fixture.
      * (Called before every test case method.)
      */
-    @Before
     public void setUp() {
         show = new Show(5,4,20);
     }
@@ -24,7 +21,6 @@ public class ShowTest extends TestCase
      * Tears down the test fixture.
      * (Called after every test case method.)
      */
-    @After
     public void tearDown() {
         show = null;
     }
