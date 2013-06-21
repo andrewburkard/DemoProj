@@ -11,7 +11,7 @@ public class DriverTest extends TestCase
 {
 	/**
 	 * Create the test case
-	 * 
+	 *
 	 * @param testName
 	 *            name of the test case
 	 */
@@ -33,6 +33,7 @@ public class DriverTest extends TestCase
 	 */
 	public void testApp()
 	{
+	    Driver.main(null);
 		assertTrue(true);
 	}
 
